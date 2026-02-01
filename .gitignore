@@ -1,0 +1,62 @@
+# Compiled files
+*.class
+*.jar
+*.war
+*.ear
+target/
+build/
+out/
+bin/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# Logs
+logs/
+*.log
+
+# Configuration files with sensitive data
+application.yaml
+application-prod.yaml
+application-*.yaml
+!application-example.yaml
+
+# Output directories
+output/
+test-output/
+
+# Project-specific files (to be removed or moved to separate project)
+*.sql
+*.py
+*.txt
+*.md
+!README.md
+!FRAMEWORK_MIGRATION.md
+!pom.xml
+
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Test data
+*.csv
+*.xlsx
+*.xls
+

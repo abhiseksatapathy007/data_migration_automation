@@ -1,0 +1,77 @@
+# Data Migration Framework Configuration Example
+# Copy this file to application.yaml and update with your actual values
+
+# Source Database Configuration
+sourceDatabase:
+  host: "source-db-server"
+  port: 1433
+  database: "SourceDatabase"
+  username: "source-user"
+  password: "source-password"
+  driver: "sqlserver"  # Options: sqlserver, postgresql
+  connectionTimeout: 30
+  maxPoolSize: 10
+
+# Target Database Configuration
+targetDatabase:
+  host: "target-db-server"
+  port: 1433
+  database: "TargetDatabase"
+  username: "target-user"
+  password: "target-password"
+  driver: "sqlserver"
+  connectionTimeout: 30
+  maxPoolSize: 10
+
+# Additional Databases (optional)
+# additionalDatabases:
+#   - name: "additional-db-1"
+#     host: "additional-server"
+#     port: 1433
+#     database: "AdditionalDB"
+#     username: "user"
+#     password: "password"
+#     driver: "sqlserver"
+
+# Report Configuration
+report:
+  outputDir: "output"
+  templateDir: "src/main/resources/templates"
+  logLevel: "INFO"
+
+# Logging Configuration
+logging:
+  level: "INFO"  # Options: DEBUG, INFO, WARN, ERROR
+  pattern: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file: "logs/framework.log"
+
+# DynamoDB Configuration (optional)
+# sourceDynamoDB:
+#   endpointUrl: "https://dynamodb.region.amazonaws.com"
+#   region: "us-east-1"
+#   accessKey: "your-access-key"
+#   secretKey: "your-secret-key"
+#   tablePrefix: "your-table-prefix"
+
+# targetDynamoDB:
+#   endpointUrl: "https://dynamodb.region.amazonaws.com"
+#   region: "us-east-1"
+#   accessKey: "your-access-key"
+#   secretKey: "your-secret-key"
+#   tablePrefix: "your-table-prefix"
+
+# S3 Configuration (optional)
+# s3:
+#   bucket: "your-bucket-name"
+#   folderPrefix: "data/"
+#   region: "us-east-1"
+#   accessKey: "your-access-key"
+#   secretKey: "your-secret-key"
+
+# s3Source:
+#   bucket: "your-source-bucket-name"
+#   folderPrefix: "data/"
+#   region: "us-east-1"
+#   accessKey: "your-access-key"
+#   secretKey: "your-secret-key"
+

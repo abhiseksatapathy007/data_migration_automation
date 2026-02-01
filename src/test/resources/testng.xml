@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Data Migration Framework Test Suite" verbose="1">
+    <test name="Comparison Examples">
+        <classes>
+            <class name="com.datamigration.framework.examples.TableCountComparisonTest"/>
+            <class name="com.datamigration.framework.examples.DynamoDBComparisonTest"/>
+            <class name="com.datamigration.framework.examples.S3ObjectComparisonTest"/>
+        </classes>
+    </test>
+</suite>
+
